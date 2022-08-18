@@ -1,0 +1,14 @@
+Key inputs in SAM and HOMER to compare them:
+- SAM:
+  - Used the Simple Efficiency Module Model (defaults) and the Inverter Datasheet model (max power 100 W, DC voltages 1-40 Vdc, night power consumption 0 W)
+  - System Design: enabled "Estimate Subarray 1 configuration", desired dc:ac ratio = 1
+  - Battery desired bank power = 30 kW (max PV array size to be tested)
+  - Grid Outage enabled as described previously
+  - Parametric tool used to vary battery capacity (20, 40, 60, 80, 100 kWh) and PV size (5, 10, 15, 20, 25, 30 kWdc) and to output unmet critical load.
+  - Repeat above, but for a new case using the grid target dispatch option.
+- HOMER:
+	- Solar resource (GHI), ambient temperature, and load copied from SAM's weather file.
+	- *TIP: Load is imported into HOMER as a simple text file with 8760 values saved with a ".dmd" extension. GHI and temperature are similar but with ".txt" extensions.*
+	- Add PV: enable temperature effects, set slope to 20 deg and derate factor to 90% (i.e., 10% losses, roughly what SAM's default losses are), considering the same range of PV sizes as SAM (5-30 kW)
+	- Add a battery: create a new battery, 10 V, 1000 Ah (10 kWh), with a flat capacity curve and 10% minimum SoC (roughly approximating Li-ion NMC in SAM in 10 kWh blocks), considering same sizes as SAM (2-10 batteries for 20-100 kWh).
+	- Under Constraints, set the maximum annual capacity shortage to 100%
