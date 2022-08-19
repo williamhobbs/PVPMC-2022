@@ -20,7 +20,7 @@ Outline:
 		- Similar to using the grid outage, select a performance model with PV+ES and a Distributed financial model. 
 		- For battery dispatch, use "Input grid power targets" and set the monthly power target to zero for all months. 
 		- [figure: screenshot of battery dispatch setup]
-		- Primary Outputs: "Electricity load total in each yeah (kWh)" (annual_electric_load) and "Annual energy imported from grid (kWh)" (annual_import_to_grid), unmet load in each year is the ratio of the two annual values. 
+		- Primary Outputs: "Electricity load total in each yeah (kWh)" (`annual_electric_load`) and "Annual energy imported from grid (kWh)" (`annual_import_to_grid`), unmet load in each year is the ratio of the two annual values. 
 		- Increase PV and/or battery size until annual energy from the grid is sufficiently close to zero.
 		- [figure: screenshot of stacked time series of electricty to load sources]
 - SAM vs HOMER (Legacy) for PV+ES
