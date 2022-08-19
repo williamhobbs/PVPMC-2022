@@ -1,9 +1,11 @@
 # PV+Wind+ES in NREL SAM, PVPMC 2022
 Supporting files for my poster presentation at the 2022 PV Performance Modeling Collaborative (PVPMC) workshop in Salt Lake City.
 
-- See the [SAM folder](SAM) for SAM project and supporting files. 
-- See the [HOMER](HOMER) folder for HOMER project and supporting files. 
-- See [SAM_HOMER_setup_notes.md](SAM_HOMER_setup_noted.md) for details on inputs to SAM and HOMER for comparing them for PV+ES offgrid modeling. 
+An overview of files and folders here:
+- [SAM folder](SAM): folder for SAM project and supporting files. 
+- [HOMER](HOMER): folder for HOMER project and supporting files. 
+- [SAM_HOMER_setup_notes.md](SAM_HOMER_setup_noted.md): details on inputs to SAM and HOMER for comparing them for PV+ES offgrid modeling. 
+- [HOMER SAM Comparison Results_rev3.xlsx]("HOMER%20SAM%20Comparison%20Results_rev3.xlsx"): Spreadsheet that processed and compares unmet load data for the SAM and HOMER PV+ES offgrid models. (_Note that this file has data connections setup to import data from .CSV files exported from SAM and HOMER. Absolute links to .CSV files would need to be updated to update this file on another computer._) 
 
 ## Disclaimer:
 
