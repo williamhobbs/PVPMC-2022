@@ -11,7 +11,7 @@ Outline:
 		- Start with a PV+ES performance model (Detailed PV-Battery or PVWatts-Battery) with a Distributed financial model (to include electric load).
 		- In the Grid Outage tab, set the critical load to be 100% of electric load, and edit the grid outage array to be 1 in all timestaps (*TIP: create an array of 1s in an external tool like Excel and then copy/paste into SAM*). Note that the default minimum state of charge during an outage (10%) is different from the standard battery dispatch default (30%) - adjust as needed. 
 		- [figure: screenshot of grid outage setup]
-		- Primary Outputs: "Critical load unmet percentage (year 1) (%) [`annaul_crit_load_percentage`], or other related critical load outputs.
+		- Primary Outputs: "Critical load unmet percentage (year 1) (%) [`annual_crit_load_percentage`], or other related critical load outputs.
 		- _Note: very small (e.g., 1e-5%) unmet load percentages may show up, presumably due to rounding and efficiency calculations, and can be treated as zero._
 		- Increase PV and/or battery size until critical load needs are sufficiently met. 
 		- *TIP: use "Quick setup..." in the parametric tool to create independent ranges of battery energy capacities and PV sizes. Set the battery desired power rating to be equal to the maximum possible PV size outside of the parametric tool for a simplified first pass.*
