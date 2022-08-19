@@ -1,6 +1,10 @@
 # PV+Wind+ES in NREL SAM, PVPMC 2022
 Supporting files for my poster presentation at the 2022 PV Performance Modeling Collaborative (PVPMC) workshop in Salt Lake City.
 
+See [SAM_HOMER_setup_notes.md](SAM_HOMER_setup_noted.md) for details on inputs to SAM and HOMER for comparing them for PV+ES offgrid modeling. 
+
+
+
 Outline:
 - Summary
 	- NREL SAM can model renewable energy systems with battery energy storage (ES) for load-matching. This can include off-grid systems (microgrids) or 24x7x365 "energy matching" scenarios, e.g., for corporations with sustainability goals that want to go beyond simple annual net zero configurations [1, 2]. 
