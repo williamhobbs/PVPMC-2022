@@ -1,5 +1,5 @@
 # PV+Wind+ES in NREL SAM, PVPMC 2022
-Supporting files for my poster presentation at the 2022 PV Performance Modeling Collaborative (PVPMC) workshop in Salt Lake City.
+Supporting files for my poster presentation at the 2022 PV Performance Modeling Collaborative (PVPMC) workshop in Salt Lake City. The poster was about using NREL SAM to model and optimize renewable energy systems with battery energy storage (ES) for load-matching, including both PV+ES _and_ **PV+Wind+ES** systems. 
 
 An overview of files and folders here:
 - [SAM folder](SAM): folder for SAM project and supporting files. 
