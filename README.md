@@ -1,9 +1,15 @@
 # PV+Wind+ES in NREL SAM, PVPMC 2022
 Supporting files for my poster presentation at the 2022 PV Performance Modeling Collaborative (PVPMC) workshop in Salt Lake City.
 
-See [SAM_HOMER_setup_notes.md](SAM_HOMER_setup_noted.md) for details on inputs to SAM and HOMER for comparing them for PV+ES offgrid modeling. 
+- See the [SAM folder](SAM) for SAM project and supporting files. 
+- See the [HOMER](HOMER) folder for HOMER project and supporting files. 
+- See [SAM_HOMER_setup_notes.md](SAM_HOMER_setup_noted.md) for details on inputs to SAM and HOMER for comparing them for PV+ES offgrid modeling. 
 
+## Disclaimer:
 
+Everyting here is for reference/information purposes only. Do your homework before making real-world decisions based on any model! As George Box is [attributed with saying](https://en.wikipedia.org/wiki/All_models_are_wrong), "All models are wrong, but some are useful."
+
+---
 
 Outline:
 - Summary
@@ -66,8 +72,4 @@ References and Resources
 
 [4] https://github.com/NREL/SAM/issues/1130
 
----
-## Disclaimer:
-Anything here is for reference/information purposes only. Do your homework before making real-world decisions based on any model!
 
-> All models are wrong, but some are useful. - generally attributed to [George Box](https://en.wikipedia.org/wiki/All_models_are_wrong)
