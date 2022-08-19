@@ -6,9 +6,17 @@ Key inputs in SAM and HOMER to compare them:
   - Grid Outage enabled as described previously
   - Parametric tool used to vary battery capacity (20, 40, 60, 80, 100 kWh) and PV size (5, 10, 15, 20, 25, 30 kWdc) and to output unmet critical load.
   - Repeat above, but for a new case using the grid target dispatch option.
+  - _TIP: for faster run times, set the Analysis period to 1 year in the Financial Parameters tab. Note that this ignores degradation, and many financial metrics will not be useful._
+  - Exporting results:
+  	- Use the Export > Save as CSV option in the parametric tool
+  	- For the Grid Outage case, include the parametric output _Critical load unmet perentage (year 1) (%)_.
+  	- For the grid target dispatch case, include parametric outputs _Electricity load total in each yeah (kWh)_ and _Annual energy imported from grid (kWh)_. Calculate unmet load in each year is the ratio of the two annual values. 
 - HOMER:
 	- Solar resource (GHI), ambient temperature, and load copied from SAM's weather file.
 	- *TIP: Load is imported into HOMER as a simple text file with 8760 values saved with a ".dmd" extension. GHI and temperature are similar but with ".txt" extensions.*
 	- Add PV: enable temperature effects, set slope to 20 deg and derate factor to 90% (i.e., 10% losses, roughly what SAM's default losses are), considering the same range of PV sizes as SAM (5-30 kW)
 	- Add a battery: create a new battery, 10 V, 1000 Ah (10 kWh), with a flat capacity curve and 10% minimum SoC (roughly approximating Li-ion NMC in SAM in 10 kWh blocks), considering same sizes as SAM (2-10 batteries for 20-100 kWh).
 	- Under Constraints, set the maximum annual capacity shortage to 100%
+	- Exporting results:
+		- After hitting _Calculate_, view _Optimization Results_ > _Details..._, right click, and select _Export Table..._, then save the .CSV file.
+		- Use _Unmet Load_ (in kWh/yr) divided by annual load to calculate unmet load fraction.
